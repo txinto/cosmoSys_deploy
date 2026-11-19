@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'net/http'
+require 'nokogiri'
 variant = ARGV.shift
 abort('Unknown deployment variant') unless %w[base requirements].include?(variant)
 active = ARGV.uniq
@@ -33,5 +34,18 @@ active.each do |id|
   path = ActionController::Base.helpers.asset_path(logical)
   response = Net::HTTP.get_response(URI("http://127.0.0.1:3000#{path}"))
   abort("#{id} asset #{path} answered #{response.code}") unless response.is_a?(Net::HTTPSuccess)
+end
+unless ApplicationController.helpers.current_theme&.favicon?
+  login = Net::HTTP.get_response(URI('http://127.0.0.1:3000/login'))
+  abort("Login page answered #{login.code}") unless login.is_a?(Net::HTTPSuccess)
+  icons = Nokogiri::HTML(login.body).css('head link').select { |link| link['rel'].to_s.split.include?('icon') }
+  icon = icons.first
+  unless icons.size == 1 && icon['type'] == 'image/svg+xml' && icon['href'].to_s.match?(%r{\A/assets/plugin_assets/cosmosys/favicon-[0-9a-f]+\.svg\z})
+    abort('The default cosmoSys favicon is missing or duplicated')
+  end
+  favicon = Net::HTTP.get_response(URI("http://127.0.0.1:3000#{icon['href']}"))
+  unless favicon.is_a?(Net::HTTPSuccess) && Nokogiri::XML(favicon.body).root&.name == 'svg'
+    abort('The cosmoSys favicon asset is not served as SVG')
+  end
 end
 puts 'Registered/dormant plugins, gem groups and assets: PASS'
