@@ -298,7 +298,7 @@ moved.
 | [cosmosys_adr](https://github.com/NesiaTech/cosmosys_adr) (`adr`) | 0.1.0 | `66f8206` | `v0.1.0` |
 | [redmine_cad_preview](https://github.com/cosmoBots/redmine_cad_preview) (`arch`, `cad`, `poris_arch`) | 1.3.0 | `7b7312b` | `1.3.0-cosmobots.1` |
 | [cosmosys_cad_preview](https://github.com/cosmoBots/cosmoSys_cad_preview) (`arch`, `cad`, `poris_arch`) | 0.1.8 | `38ac32d` | `0.1.8` |
-| [cosmosys_arch](https://github.com/cosmoBots/cosmoSys_Arch) (`arch`, `poris_arch`) | 0.1.11 | `00c46e1` | after `0.1.10` |
+| [cosmosys_arch](https://github.com/cosmoBots/cosmoSys_Arch) (`arch`, `poris_arch`) | 0.1.11 | `00c46e1` | `0.1.11` |
 | [redmine_kroki](https://github.com/JeffDess/redmine-kroki) (`kroki`) | 0.5.1 | `4d11ab9` | `v0.5.1` |
 | `redmine_kroki_compat` (`kroki`) | n/a | `kroki_compat/` in this repository | n/a |
 | [cosmosys_kroki](https://github.com/cosmoBots/cosmosys_kroki) (`kroki`) | 0.1.3 | `805b76c` | after `0.1.3` |
