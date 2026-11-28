@@ -213,7 +213,7 @@ start, or `redmine` does not start either.
 trackers of its own, and a PORIS tab with the porisViewer. Its repository
 carries the viewer bundle already built, so the image needs no Node; the
 updater and the validation check that the bundle is served. The pinned PORIS
-release needs cosmoSys 0.2.13 or later, which
+release needs cosmoSys 0.2.14 or later, which
 `scripts/update-pins.sh` checks whenever it moves a pin.
 
 `cosmosys_adr` keeps Architecture Decision Records as items of the `csAdr`
@@ -292,7 +292,7 @@ moved.
 | Component | Version | Commit | Tag |
 | --- | --- | --- | --- |
 | Redmine | 7.0.1 | image manifest in `.env.example` | n/a |
-| [cosmoSys](https://github.com/cosmoBots/cosmoSys) | 0.2.13 | `52b27d2` | `0.2.13` |
+| [cosmoSys](https://github.com/cosmoBots/cosmoSys) | 0.2.14 | `fdb7cb0` | `0.2.14` |
 | [cosmoSys Requirements](https://github.com/cosmoBots/cosmoSys_Req) | 0.3.7 | `38717c0` | `0.3.7` |
 | [rspreadsheet](https://github.com/cosmoBots/rspreadsheet) | n/a | `c01d413` | after `v0.5.3` |
 | [cosmosys_adr](https://github.com/NesiaTech/cosmosys_adr) (`adr`) | 0.1.0 | `66f8206` | `v0.1.0` |
@@ -304,7 +304,7 @@ moved.
 | [cosmosys_kroki](https://github.com/cosmoBots/cosmosys_kroki) (`kroki`) | 0.1.3 | `805b76c` | after `0.1.3` |
 | [redmine_cbots_latex](https://github.com/cosmoBots/redmine_cbots_latex) (`latex`, `notebooks`) | 0.1.1 | `7abb302` | after `0.1.1` |
 | [redmine_notebook_preview](https://github.com/cosmoBots/redmine_notebook_preview) (`notebooks`) | 0.2.0 | `2b76634` | after `v0.2.0` |
-| [cosmosys_poris](https://github.com/cosmoBots/cosmosys_poris) (`poris`, `poris_arch`) | 0.2.11 | `98ff53b` | `0.2.11` |
+| [cosmosys_poris](https://github.com/cosmoBots/cosmosys_poris) (`poris`, `poris_arch`) | 0.2.12 | `291d62f` | `0.2.12` |
 | [cosmosys_poris_arch](https://github.com/cosmoBots/cosmoSys_poris_arch) (`poris_arch`) | 0.1.5 | `b69c32b` | `0.1.5` |
 | [additionals](https://github.com/AlphaNodes/additionals) (`tags`) | 4.6.0 | `5f5ff95` | `4.6.0` |
 | [additional_tags](https://github.com/AlphaNodes/additional_tags) (`tags`) | 4.6.0 | `3d503b1` | `4.6.0` |
