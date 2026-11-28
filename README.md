@@ -292,7 +292,7 @@ moved.
 | Component | Version | Commit | Tag |
 | --- | --- | --- | --- |
 | Redmine | 7.0.1 | image manifest in `.env.example` | n/a |
-| [cosmoSys](https://github.com/cosmoBots/cosmoSys) | 0.2.14 | `fdb7cb0` | `0.2.14` |
+| [cosmoSys](https://github.com/cosmoBots/cosmoSys) | 0.2.15 | `2fb2ebb` | `0.2.15` |
 | [cosmoSys Requirements](https://github.com/cosmoBots/cosmoSys_Req) | 0.3.7 | `38717c0` | `0.3.7` |
 | [rspreadsheet](https://github.com/cosmoBots/rspreadsheet) | n/a | `c01d413` | after `v0.5.3` |
 | [cosmosys_adr](https://github.com/NesiaTech/cosmosys_adr) (`adr`) | 0.1.0 | `66f8206` | `v0.1.0` |
